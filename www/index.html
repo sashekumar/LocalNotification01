@@ -56,7 +56,11 @@
                 //
                 function onDeviceReady() {
                     // Empty
-                    alert(android.os.Build.VERSION.RELEASE);
+                    //alert(android.os.Build.VERSION.RELEASE);
+                    var deviceOS  = device.platform;  //fetch the device operating system
+                    var deviceOSVersion = device.version;  //fetch the device OS version
+                      alert("Device OS: " + deviceOS); 
+                      alert("Device OS Version: " + deviceOSVersion);
                 }
 
                 
