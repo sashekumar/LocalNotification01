@@ -48,38 +48,37 @@
         
         <script type="text/javascript" charset="utf-8">
 
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+                // Wait for device API libraries to load
+                //
+                document.addEventListener("deviceready", onDeviceReady, false);
 
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        // Empty
-         navigator.notification.alert(
-            'You are the winner!',  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-    }
+                // device APIs are available
+                //
+                function onDeviceReady() {
+                    // Empty
+                     navigator.notification.alert(
+                        'Test Notification!',  // message
+                        alertDismissed,         // callback
+                        'Payment Due',            // title
+                        'Done'                  // buttonName
+                    );
+                }
 
-    // alert dialog dismissed
-        function alertDismissed() {
-            // do something
-        }
+                // alert dialog dismissed
+                    function alertDismissed() {
+                        // do something
+                    }
 
-    // Show a custom alertDismissed
-    //
-    function showAlert() {
-        navigator.notification.alert(
-            'You are the winner!',  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-    }
-
-    </script>
+                // Show a custom alertDismissed
+                //
+                function showAlert() {
+                    navigator.notification.alert(
+                        'Test Notification!',  // message
+                        alertDismissed,         // callback
+                        'Payment Due',            // title
+                        'Done'                  // buttonName
+                    );
+                }
+        </script>
     </body>
 </html>
