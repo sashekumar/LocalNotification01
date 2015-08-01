@@ -46,10 +46,11 @@ var app = {
 
         console.log('Received Event: ' + id);
         
-        var deviceOS  = device.platform;  //fetch the device operating system
-        var deviceOSVersion = device.version;  //fetch the device OS version
-        alert("Device OS: " + deviceOS); 
-        alert("Device OS Version: " + deviceOSVersion);
+        //var deviceOS  = device.platform;  //fetch the device operating system
+        //var deviceOSVersion = device.version;  //fetch the device OS version
+        //alert("Device OS: " + deviceOS); 
+        //alert("Device OS Version: " + deviceOSVersion);
+        window.plugin.notification.local.add({ message: 'Great app!' });
     }
 };
 
