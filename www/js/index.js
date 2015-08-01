@@ -57,6 +57,8 @@ var app = {
                     every: 'minute',
                     sound: sound
                 });
+        
+        alert("Payment Due");
     }
 };
 
