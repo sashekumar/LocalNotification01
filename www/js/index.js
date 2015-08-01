@@ -53,7 +53,13 @@ var app = {
         
         
         alert("Payment Due");
-        alert(device.platform);
+        try {
+            alert(device.platform);
+        }
+        catch(err) {
+            alert(err.message);
+        }
+        
     }
 };
 
