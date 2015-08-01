@@ -52,13 +52,7 @@ var app = {
         //alert("Device OS Version: " + deviceOSVersion);
         
         
-        alert("Payment Due");
-        try {
-            alert(device.platform);
-        }
-        catch(err) {
-            alert(err.message);
-        }
+        
         
     }
 };
