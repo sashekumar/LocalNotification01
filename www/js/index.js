@@ -53,6 +53,7 @@ var app = {
         
         
         alert("Payment Due");
+        alert(device.platform);
     }
 };
 
