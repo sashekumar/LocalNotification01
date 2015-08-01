@@ -50,7 +50,13 @@ var app = {
         //var deviceOSVersion = device.version;  //fetch the device OS version
         //alert("Device OS: " + deviceOS); 
         //alert("Device OS Version: " + deviceOSVersion);
-        window.plugin.notification.local.add({ message: 'Great app!' });
+        var sound = device.platform == 'Android' ? 'file://sound.mp3' : 'file://beep.caf';
+                cordova.plugins.notification.local.schedule({
+                    id: 1,
+                    text: 'Scheduled every minute',
+                    every: 'minute',
+                    sound: sound
+                });
     }
 };
 
