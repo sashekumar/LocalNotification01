@@ -46,7 +46,7 @@ var app = {
 
         console.log('Received Event: ' + id);
         
-        navigator.notification.alert('PhoneGap Alert', null, 'Title', 'Button');
+        alert("ready");
     }
 };
 
