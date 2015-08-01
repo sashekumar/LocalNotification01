@@ -44,6 +44,7 @@
         
          function onLoad() {
             document.addEventListener("deviceready", onDeviceReady, false);
+             window.addEventListener("batterystatus", onBatteryStatus, false);
              alert("deviceready");
         }
 
@@ -61,6 +62,11 @@
         }
         
     }
+        
+        function onBatteryStatus(info) {
+            // Handle the online event
+            element.innerHTML = "Level: " + info.level + " isPlugged: " + info.isPlugged;
+            }
 
     </script>
     </head>

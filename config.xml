@@ -24,4 +24,5 @@
     </platform>
     <plugin name="cordova-plugin-dialogs" spec="^1.1.1" />
     <plugin name="cordova-plugin-device" spec="^1.0.1" />
+    <plugin name="cordova-plugin-battery-status" spec="https://git-wip-us.apache.org/repos/asf/cordova-plugin-battery-status.git" />
 </widget>
