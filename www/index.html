@@ -46,7 +46,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         
-        <!--<script type="text/javascript" charset="utf-8">
+        <script type="text/javascript" charset="utf-8">
 
                 // Wait for device API libraries to load
                 //
@@ -56,29 +56,15 @@
                 //
                 function onDeviceReady() {
                     // Empty
-                     navigator.notification.alert(
-                        'Test Notification!',  // message
-                        alertDismissed,         // callback
-                        'Payment Due',            // title
-                        'Done'                  // buttonName
-                    );
+                     cordova.plugins.notification.local.schedule({
+                            id: 1,
+                            text: "AverMax Payment Due",
+                            sound: isAndroid ? 'file://sound.mp3' : 'file://beep.caf',
+                            every: 'minute'
+                        });
                 }
 
-                // alert dialog dismissed
-                    function alertDismissed() {
-                        // do something
-                    }
-
-                // Show a custom alertDismissed
-                //
-                function showAlert() {
-                    navigator.notification.alert(
-                        'Test Notification!',  // message
-                        alertDismissed,         // callback
-                        'Payment Due',            // title
-                        'Done'                  // buttonName
-                    );
-                }
-        </script>-->
+                
+        </script>
     </body>
 </html>
